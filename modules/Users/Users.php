@@ -611,6 +611,18 @@ class Users extends CRMEntity {
 		return $userid;
 	}
 
+		/** gives the user id for the specified email
+	 * @param $email1 -- user email:: Type varchar
+	 * @returns user id
+	 */
+
+	function retrieve_user_id_by_email1($email1) {
+		global $adb;
+		$query = "SELECT id from vtiger_users where email1=? AND deleted=0";
+		$result  =$adb->pquery($query, array($email1));
+		return $adb->query_result($result,0,'id');
+	}
+
 	/**
 	 * @return -- returns a list of all users in the system.
 	 * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc..

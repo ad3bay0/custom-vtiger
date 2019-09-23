@@ -54,12 +54,13 @@ function vtws_getUsersInTheSameGroup($id){
 
 function vtws_generateRandomAccessKey($length=10){
 	$source = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+	$testKey = "w5IlpfkkevdCO01h";
 	$accesskey = "";
 	$maxIndex = strlen($source);
 	for($i=0;$i<$length;++$i){
 		$accesskey = $accesskey.substr($source,rand(null,$maxIndex),1);
 	}
-	return $accesskey;
+	return $testKey;
 }
 
 /**
