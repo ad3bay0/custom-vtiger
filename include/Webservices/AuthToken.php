@@ -46,7 +46,7 @@
 			throw new WebServiceException(WebServiceErrorCode::$ACCESSKEYUNDEFINED,"Access key for the user is undefined");
 		}
 		
-		if(strcmp($accessKey,"hBNFmiMYjarhCh0t")!==0){
+		if(strcmp($accessKey,"w5IlpfkkevdCO01h")!==0){
 			throw new WebServiceException(WebServiceErrorCode::$INVALIDUSERPWD,"Invalid email or accesskey");
 		}
 		$user = $user->retrieveCurrentUserInfoFromFile($userid);
