@@ -6,14 +6,15 @@
 * Portions created by vtiger are Copyright (C) vtiger.
 * All Rights Reserved.
 ************************************************************************************}
-
+{*+**********************************************************************************
 <footer class="app-footer">
 	<p>
-		Powered by vtiger CRM - {$VTIGER_VERSION}&nbsp;&nbsp;© 2004 - {date('Y')}&nbsp;&nbsp;
+	
+		<Powered by vtiger CRM - {$VTIGER_VERSION}&nbsp;&nbsp;© 2004 - {date('Y')}&nbsp;&nbsp;
 		<a href="//www.vtiger.com" target="_blank">Vtiger</a>&nbsp;|&nbsp;
 		<a href="https://www.vtiger.com/privacy-policy" target="_blank">Privacy Policy</a>
 	</p>
-</footer>
+</footer>************************************************************************************}
 </div>
 <div id='overlayPage'>
 	<!-- arrow is added to point arrow to the clicked element (Ex:- TaskManagement), 
